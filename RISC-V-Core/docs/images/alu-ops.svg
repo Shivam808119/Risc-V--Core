@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 527" width="1000" height="527" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>ALU operations</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+</defs>
+<rect width="1000" height="527" fill="#ffffff"/>
+<text x="500" y="30" font-size="20" text-anchor="middle" font-weight="bold" fill="#0f172a">ALU operations and their op codes</text>
+<rect x="20" y="55" width="960" height="62" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="40" y="83" font-size="16" text-anchor="start" font-weight="bold" fill="#0f172a">Add / Subtract</text>
+<text x="40" y="102" font-size="12" text-anchor="start" font-weight="normal" fill="#475569">base RV32I</text>
+<rect x="280" y="66" width="150" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="294" y="91" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">ADD</text>
+<text x="416" y="91" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 0</text>
+<rect x="445" y="66" width="150" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="459" y="91" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">SUB</text>
+<text x="581" y="91" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 1</text>
+<rect x="20" y="127" width="960" height="62" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+<text x="40" y="155" font-size="16" text-anchor="start" font-weight="bold" fill="#0f172a">Multiply</text>
+<text x="40" y="174" font-size="12" text-anchor="start" font-weight="normal" fill="#475569">M extension</text>
+<rect x="280" y="138" width="150" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="294" y="163" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">MUL</text>
+<text x="416" y="163" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 10</text>
+<rect x="445" y="138" width="150" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="459" y="163" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">MULH</text>
+<text x="581" y="163" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 11</text>
+<rect x="610" y="138" width="150" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="624" y="163" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">MULHSU</text>
+<text x="746" y="163" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 12</text>
+<rect x="775" y="138" width="150" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="789" y="163" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">MULHU</text>
+<text x="911" y="163" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 13</text>
+<rect x="20" y="199" width="960" height="62" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+<text x="40" y="227" font-size="16" text-anchor="start" font-weight="bold" fill="#0f172a">Divide / Remainder</text>
+<text x="40" y="246" font-size="12" text-anchor="start" font-weight="normal" fill="#475569">M extension</text>
+<rect x="280" y="210" width="150" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="294" y="235" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">DIV</text>
+<text x="416" y="235" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 14</text>
+<rect x="445" y="210" width="150" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="459" y="235" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">DIVU</text>
+<text x="581" y="235" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 15</text>
+<rect x="610" y="210" width="150" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="624" y="235" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">REM</text>
+<text x="746" y="235" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 16</text>
+<rect x="775" y="210" width="150" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="789" y="235" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">REMU</text>
+<text x="911" y="235" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 17</text>
+<rect x="20" y="271" width="960" height="62" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="40" y="299" font-size="16" text-anchor="start" font-weight="bold" fill="#0f172a">Logic</text>
+<text x="40" y="318" font-size="12" text-anchor="start" font-weight="normal" fill="#475569">bitwise</text>
+<rect x="280" y="282" width="150" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="294" y="307" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">XOR</text>
+<text x="416" y="307" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 5</text>
+<rect x="445" y="282" width="150" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="459" y="307" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">OR</text>
+<text x="581" y="307" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 8</text>
+<rect x="610" y="282" width="150" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="624" y="307" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">AND</text>
+<text x="746" y="307" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 9</text>
+<rect x="20" y="343" width="960" height="62" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+<text x="40" y="371" font-size="16" text-anchor="start" font-weight="bold" fill="#0f172a">Shift</text>
+<text x="40" y="390" font-size="12" text-anchor="start" font-weight="normal" fill="#475569">by b[4:0]</text>
+<rect x="280" y="354" width="150" height="40" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="294" y="379" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">SLL</text>
+<text x="416" y="379" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 2</text>
+<rect x="445" y="354" width="150" height="40" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="459" y="379" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">SRL</text>
+<text x="581" y="379" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 6</text>
+<rect x="610" y="354" width="150" height="40" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="624" y="379" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">SRA</text>
+<text x="746" y="379" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 7</text>
+<rect x="20" y="415" width="960" height="62" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="40" y="443" font-size="16" text-anchor="start" font-weight="bold" fill="#0f172a">Compare</text>
+<text x="40" y="462" font-size="12" text-anchor="start" font-weight="normal" fill="#475569">set-less-than</text>
+<rect x="280" y="426" width="150" height="40" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="294" y="451" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">SLT</text>
+<text x="416" y="451" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 3</text>
+<rect x="445" y="426" width="150" height="40" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="459" y="451" font-size="15" text-anchor="start" font-weight="bold" fill="#0f172a">SLTU</text>
+<text x="581" y="451" font-size="12" text-anchor="end" font-weight="normal" fill="#475569">op 4</text>
+<text x="500" y="505" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569" font-style="italic">Division corner cases follow the RISC-V spec: x/0 = -1 (all ones), x%0 = x, INT_MIN / -1 = INT_MIN, INT_MIN % -1 = 0</text>
+
+</svg>

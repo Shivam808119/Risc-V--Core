@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 285" width="1000" height="285" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Design flow from idea to chip</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+</defs>
+<rect width="1000" height="285" fill="#ffffff"/>
+<text x="500" y="30" font-size="20" text-anchor="middle" font-weight="bold" fill="#0f172a">From idea to chip: the 8 stages of making a processor</text>
+<rect x="12" y="60" width="488" height="44" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="256.0" y="88" font-size="15" text-anchor="middle" font-weight="bold" fill="#166534">Covered in this repository</text>
+<rect x="508" y="60" width="488" height="44" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="752.0" y="88" font-size="15" text-anchor="middle" font-weight="bold" fill="#334155">Next steps (not covered yet)</text>
+<rect x="19" y="110" width="108" height="70" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="73.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#2563eb">1</text>
+<text x="73.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Specification</text>
+<text x="73.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">RISC-V manual</text>
+<polyline points="127,145 141,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="141" y="110" width="108" height="70" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="195.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#2563eb">2</text>
+<text x="195.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Architecture</text>
+<text x="195.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">block diagram</text>
+<polyline points="249,145 263,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="263" y="110" width="108" height="70" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="317.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#2563eb">3</text>
+<text x="317.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">RTL design</text>
+<text x="317.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">Verilog code</text>
+<polyline points="371,145 385,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="385" y="110" width="108" height="70" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="439.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#2563eb">4</text>
+<text x="439.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Simulation</text>
+<text x="439.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">Icarus Verilog</text>
+<text x="439.0" y="218" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">+ GTKWave</text>
+<polyline points="493,145 515,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="515" y="110" width="108" height="70" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="569.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#64748b">5</text>
+<text x="569.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Synthesis</text>
+<text x="569.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">Yosys / Vivado</text>
+<text x="569.0" y="218" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">/ Quartus</text>
+<polyline points="623,145 637,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="637" y="110" width="108" height="70" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="691.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#64748b">6</text>
+<text x="691.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Place &amp; route</text>
+<text x="691.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">nextpnr (FPGA)</text>
+<text x="691.0" y="218" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">OpenLane (ASIC)</text>
+<polyline points="745,145 759,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="759" y="110" width="108" height="70" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="813.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#64748b">7</text>
+<text x="813.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Sign-off</text>
+<text x="813.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">timing, DRC,</text>
+<text x="813.0" y="218" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">LVS checks</text>
+<polyline points="867,145 881,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="881" y="110" width="108" height="70" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="935.0" y="138" font-size="22" text-anchor="middle" font-weight="bold" fill="#64748b">8</text>
+<text x="935.0" y="162" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Chip</text>
+<text x="935.0" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">FPGA bitstream</text>
+<text x="935.0" y="218" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">or GDSII to fab</text>
+<text x="500" y="262" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569" font-style="italic">Stages 1-4 turn an idea into verified Verilog code. Stages 5-8 turn that code into real hardware.</text>
+
+</svg>

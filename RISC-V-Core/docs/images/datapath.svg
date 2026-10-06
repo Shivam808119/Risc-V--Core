@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Datapath block diagram</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+</defs>
+<rect width="1000" height="520" fill="#ffffff"/>
+<text x="500" y="28" font-size="20" text-anchor="middle" font-weight="bold" fill="#0f172a">Single-cycle datapath of riscv_core</text>
+<rect x="30" y="210" width="80" height="60" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="70.0" y="236.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a">PC</text>
+<text x="70.0" y="256.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">32-bit reg</text>
+<rect x="160" y="180" width="120" height="120" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="220.0" y="236.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a">Instruction</text>
+<text x="220.0" y="256.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">Memory (imem)</text>
+<rect x="340" y="45" width="160" height="80" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="420.0" y="81.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a">Decoder +</text>
+<text x="420.0" y="101.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">Control unit</text>
+<rect x="340" y="170" width="160" height="140" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="420.0" y="236.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a">Register File</text>
+<text x="420.0" y="256.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">32 x 32-bit</text>
+<rect x="340" y="340" width="100" height="50" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="390.0" y="370.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#0f172a">Imm Gen</text>
+<rect x="540" y="250" width="34" height="60" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="557.0" y="285.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a"></text>
+<text x="557" y="244" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">mux</text>
+<rect x="610" y="190" width="100" height="130" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="660.0" y="251.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a">ALU</text>
+<text x="660.0" y="271.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">add sub mul</text>
+<text x="660" y="292" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">div rem ...</text>
+<rect x="760" y="190" width="130" height="130" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="825.0" y="251.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a">Data Memory</text>
+<text x="825.0" y="271.0" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">(dmem)</text>
+<rect x="930" y="200" width="34" height="110" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="947.0" y="260.0" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a"></text>
+<text x="947" y="328" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">WB mux</text>
+<rect x="30" y="380" width="250" height="60" rx="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="155.0" y="406.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#0f172a">Next-PC logic</text>
+<text x="155.0" y="426.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">PC+4 | branch | jal | jalr</text>
+<polyline points="110,240 160,240" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="135" y="232" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">addr</text>
+<polyline points="280,240 310,240" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="310,85 310,365" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="310,85 340,85" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="310,240 340,240" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="310,365 340,365" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="298" y="160" font-size="11" text-anchor="end" font-weight="normal" fill="#475569">instr[31:0]</text>
+<polyline points="500,210 610,210" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="555" y="202" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">rd1</text>
+<polyline points="500,280 540,280" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="520" y="272" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">rd2</text>
+<polyline points="440,365 557,365" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="557,365 557,310" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="500" y="358" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">imm</text>
+<polyline points="574,280 610,280" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="520,280 520,420" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="520,420 825,420" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="825,420 825,320" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="672" y="412" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">store data (rd2)</text>
+<polyline points="710,255 760,255" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="735" y="247" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">addr</text>
+<polyline points="890,255 930,255" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="735,255 735,150 947,150" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="947,150 947,200" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="840" y="142" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">ALU result / PC+4 / imm</text>
+<polyline points="420,125 420,170" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="490" y="150" font-size="11" text-anchor="middle" font-weight="normal" fill="#7c3aed">reg_we</text>
+<polyline points="500,85 660,85" fill="none" stroke="#7c3aed" stroke-width="2"/>
+<polyline points="660,85 660,190" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="600" y="77" font-size="11" text-anchor="middle" font-weight="normal" fill="#7c3aed">alu_op</text>
+<polyline points="660,85 825,85" fill="none" stroke="#7c3aed" stroke-width="2"/>
+<polyline points="825,85 825,190" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="760" y="77" font-size="11" text-anchor="middle" font-weight="normal" fill="#7c3aed">mem_we</text>
+<polyline points="964,255 985,255 985,480 470,480" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="470,480 470,310" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="720" y="472" font-size="11" text-anchor="middle" font-weight="normal" fill="#475569">write-back data</text>
+<polyline points="70,380 70,270" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<text x="86" y="330" font-size="11" text-anchor="start" font-weight="normal" fill="#475569">next_pc</text>
+<text x="500" y="505" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569" font-style="italic">Solid lines carry data. Dashed purple lines are control signals produced by the decoder.</text>
+
+</svg>

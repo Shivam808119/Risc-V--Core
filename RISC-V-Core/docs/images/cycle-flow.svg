@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 305" width="1000" height="305" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Fetch decode execute memory write-back</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+</defs>
+<rect width="1000" height="305" fill="#ffffff"/>
+<text x="500" y="30" font-size="20" text-anchor="middle" font-weight="bold" fill="#0f172a">What happens in ONE clock cycle</text>
+<rect x="28" y="50" width="944" height="170" rx="14" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="8 5"/>
+<text x="500" y="74" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569" font-style="italic">all five stages complete before the next rising clock edge</text>
+<rect x="40" y="90" width="160" height="110" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="120.0" y="122" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">1  Fetch</text>
+<text x="120.0" y="152" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">imem[PC]</text>
+<text x="120.0" y="170" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">gives instr</text>
+<polyline points="200,145 230,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="230" y="90" width="160" height="110" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="310.0" y="122" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">2  Decode</text>
+<text x="310.0" y="152" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">split fields,</text>
+<text x="310.0" y="170" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">make imm, set control</text>
+<polyline points="390,145 420,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="420" y="90" width="160" height="110" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="500.0" y="122" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">3  Execute</text>
+<text x="500.0" y="152" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">ALU computes;</text>
+<text x="500.0" y="170" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">compare for branches</text>
+<polyline points="580,145 610,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="610" y="90" width="160" height="110" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="690.0" y="122" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">4  Memory</text>
+<text x="690.0" y="152" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">lw reads dmem,</text>
+<text x="690.0" y="170" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">sw writes dmem</text>
+<polyline points="770,145 800,145" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="800" y="90" width="160" height="110" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="880.0" y="122" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">5  Write-back</text>
+<text x="880.0" y="152" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">result goes to</text>
+<text x="880.0" y="170" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">register rd</text>
+<polyline points="880.0,200 880.0,255 120.0,255 120.0,202" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<text x="500" y="285" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569">clock edge: PC &lt;- next_pc (PC+4, or branch / jump target); register and memory writes commit</text>
+
+</svg>

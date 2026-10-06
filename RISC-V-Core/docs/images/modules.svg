@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 410" width="1000" height="410" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Module hierarchy</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+</defs>
+<rect width="1000" height="410" fill="#ffffff"/>
+<text x="500" y="30" font-size="20" text-anchor="middle" font-weight="bold" fill="#0f172a">Module hierarchy (riscv_core.v + tb_riscv_core.v)</text>
+<rect x="380" y="55" width="240" height="55" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="500.0" y="78.5" font-size="15" text-anchor="middle" font-weight="bold" fill="#0f172a">tb_riscv_core</text>
+<text x="500.0" y="98.5" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569">testbench: clock, reset, checks</text>
+<rect x="380" y="150" width="240" height="70" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="500.0" y="181.0" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">riscv_core</text>
+<text x="500.0" y="201.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569">top: PC, decoder, control, next-PC</text>
+<polyline points="500,110 500,150" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<polyline points="500,220 500,245" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="140.0,245 860.0,245" fill="none" stroke="#475569" stroke-width="2"/>
+<polyline points="140.0,245 140.0,275" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="40" y="275" width="200" height="80" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="140.0" y="311.0" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">imem</text>
+<text x="140.0" y="331.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569">reads program.hex</text>
+<polyline points="380.0,245 380.0,275" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="280" y="275" width="200" height="80" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="380.0" y="311.0" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">regfile</text>
+<text x="380.0" y="331.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569">32 x 32-bit, x0 = 0</text>
+<polyline points="620.0,245 620.0,275" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="520" y="275" width="200" height="80" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="620.0" y="311.0" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">alu</text>
+<text x="620.0" y="331.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569">add sub mul div rem logic</text>
+<polyline points="860.0,245 860.0,275" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="760" y="275" width="200" height="80" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="860.0" y="311.0" font-size="16" text-anchor="middle" font-weight="bold" fill="#0f172a">dmem</text>
+<text x="860.0" y="331.0" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569">256-word data RAM</text>
+<text x="500" y="390" font-size="12" text-anchor="middle" font-weight="normal" fill="#475569" font-style="italic">The decoder, control unit, immediate generator, branch comparator and PC register live inside riscv_core.</text>
+
+</svg>

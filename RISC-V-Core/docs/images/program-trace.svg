@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 544" width="1000" height="544" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Test program trace</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+</defs>
+<rect width="1000" height="544" fill="#ffffff"/>
+<text x="500" y="30" font-size="20" text-anchor="middle" font-weight="bold" fill="#0f172a">Test program (program.hex) executed instruction by instruction</text>
+<rect x="20" y="50" width="960" height="36" rx="8" fill="#0f172a"/>
+<text x="30" y="74" font-size="14" text-anchor="start" font-weight="bold" fill="#ffffff">Addr</text>
+<text x="120" y="74" font-size="14" text-anchor="start" font-weight="bold" fill="#ffffff">Machine code</text>
+<text x="290" y="74" font-size="14" text-anchor="start" font-weight="bold" fill="#ffffff">Assembly</text>
+<text x="520" y="74" font-size="14" text-anchor="start" font-weight="bold" fill="#ffffff">What happens</text>
+<text x="900" y="74" font-size="14" text-anchor="end" font-weight="bold" fill="#ffffff">Result</text>
+<rect x="20" y="86" width="960" height="34" fill="#f8fafc"/>
+<text x="30" y="108" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x00</text>
+<text x="120" y="108" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">01400093</text>
+<text x="290" y="108" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">addi x1, x0, 20</text>
+<text x="520" y="108" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x1 = 20</text>
+<text x="900" y="108" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">20</text>
+<text x="30" y="142" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x04</text>
+<text x="120" y="142" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">00600113</text>
+<text x="290" y="142" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">addi x2, x0, 6</text>
+<text x="520" y="142" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x2 = 6</text>
+<text x="900" y="142" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">6</text>
+<rect x="20" y="154" width="960" height="34" fill="#f8fafc"/>
+<text x="30" y="176" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x08</text>
+<text x="120" y="176" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">002081B3</text>
+<text x="290" y="176" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">add  x3, x1, x2</text>
+<text x="520" y="176" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x3 = 20 + 6</text>
+<text x="900" y="176" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">26</text>
+<text x="30" y="210" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x0C</text>
+<text x="120" y="210" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">40208233</text>
+<text x="290" y="210" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">sub  x4, x1, x2</text>
+<text x="520" y="210" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x4 = 20 - 6</text>
+<text x="900" y="210" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">14</text>
+<rect x="20" y="222" width="960" height="34" fill="#f8fafc"/>
+<text x="30" y="244" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x10</text>
+<text x="120" y="244" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">022082B3</text>
+<text x="290" y="244" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">mul  x5, x1, x2</text>
+<text x="520" y="244" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x5 = 20 * 6</text>
+<text x="900" y="244" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">120</text>
+<text x="30" y="278" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x14</text>
+<text x="120" y="278" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">0220C333</text>
+<text x="290" y="278" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">div  x6, x1, x2</text>
+<text x="520" y="278" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x6 = 20 / 6</text>
+<text x="900" y="278" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">3</text>
+<rect x="20" y="290" width="960" height="34" fill="#f8fafc"/>
+<text x="30" y="312" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x18</text>
+<text x="120" y="312" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">0220E3B3</text>
+<text x="290" y="312" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">rem  x7, x1, x2</text>
+<text x="520" y="312" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x7 = 20 % 6</text>
+<text x="900" y="312" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">2</text>
+<text x="30" y="346" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x1C</text>
+<text x="120" y="346" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">00302023</text>
+<text x="290" y="346" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">sw   x3, 0(x0)</text>
+<text x="520" y="346" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">mem[0] = x3</text>
+<text x="900" y="346" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">26</text>
+<rect x="20" y="358" width="960" height="34" fill="#f8fafc"/>
+<text x="30" y="380" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x20</text>
+<text x="120" y="380" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">00002403</text>
+<text x="290" y="380" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">lw   x8, 0(x0)</text>
+<text x="520" y="380" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x8 = mem[0]</text>
+<text x="900" y="380" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">26</text>
+<text x="30" y="414" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x24</text>
+<text x="120" y="414" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">007404B3</text>
+<text x="290" y="414" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">add  x9, x8, x7</text>
+<text x="520" y="414" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">x9 = 26 + 2</text>
+<text x="900" y="414" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">28</text>
+<rect x="20" y="426" width="960" height="34" fill="#f8fafc"/>
+<text x="30" y="448" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x28</text>
+<text x="120" y="448" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">0200C533</text>
+<text x="290" y="448" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">div  x10, x1, x0</text>
+<text x="520" y="448" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">divide by zero</text>
+<text x="900" y="448" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">-1</text>
+<text x="30" y="482" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">0x2C</text>
+<text x="120" y="482" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">0000006F</text>
+<text x="290" y="482" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a" font-family="Consolas, Menlo, monospace">jal  x0, 0</text>
+<text x="520" y="482" font-size="14" text-anchor="start" font-weight="normal" fill="#0f172a">loop forever (halt)</text>
+<text x="900" y="482" font-size="14" text-anchor="end" font-weight="bold" fill="#0f172a">-</text>
+<rect x="20" y="86" width="960" height="408" rx="0" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="500" y="522" font-size="13" text-anchor="middle" font-weight="normal" fill="#475569" font-style="italic">The testbench checks x1 - x10 after 200 ns and prints PASS or FAIL for each register.</text>
+
+</svg>
