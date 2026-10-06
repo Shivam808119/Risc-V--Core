@@ -10,9 +10,9 @@ It is built for learning and for explaining. The whole CPU is one short file, wi
 
 | Guide | What it covers |
 |---|---|
-| [**Part 1: From idea to chip**](RISC-V-Core/docs/01-from-idea-to-chip.md) | The full journey of making a core: specification, architecture, Verilog, simulation, synthesis, FPGA / ASIC, and the final chip |
+| [**Part 1: From idea to chip**](RISC-V-Core/docs/Idea_toChip.md) | The full journey of making a core: specification, architecture, Verilog, simulation, synthesis, FPGA / ASIC, and the final chip |
 | [**Part 2: The core explained**](RISC-V-Core/docs/02-core-explained.md) | Every module, the instruction formats, the control signals, the branch logic and the test program, all with diagrams |
-| [**Presentation outline**](RISC-V-Core/docs/03-presentation-outline.md) | A slide-by-slide plan for a talk, with the diagram to use on each slide and likely questions with answers |
+| [**Presentation outline**](RISC-V-Core/docs/Outline_explained.md) | A slide-by-slide plan for a talk, with the diagram to use on each slide and likely questions with answers |
 
 ## What is in this repository
 
