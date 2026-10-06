@@ -2,7 +2,7 @@
 
 A small, readable **RISC-V processor core** (RV32I + M extension) written in Verilog. It executes every instruction in **one clock cycle** and can do all the basic arithmetic: **add, subtract, multiply, divide and remainder**, plus logic, shifts, comparisons, branches, jumps and word loads and stores.
 
-It is built for learning and for explaining. The whole CPU is one short file, with a testbench, a test program, and diagrams you can use in a presentation.
+ The whole CPU is one short file, with a testbench, a test program, and diagrams you can use in a presentation.
 
 ![Datapath](RISC-V-Core/docs/images/datapath.svg)
 
@@ -12,7 +12,7 @@ It is built for learning and for explaining. The whole CPU is one short file, wi
 |---|---|
 | [**Part 1: From idea to chip**](RISC-V-Core/docs/Idea_toChip.md) | The full journey of making a core: specification, architecture, Verilog, simulation, synthesis, FPGA / ASIC, and the final chip |
 | [**Part 2: The core explained**](RISC-V-Core/docs/02-core-explained.md) | Every module, the instruction formats, the control signals, the branch logic and the test program, all with diagrams |
-| [**Presentation outline**](RISC-V-Core/docs/Outline_explained.md) | A slide-by-slide plan for a talk, with the diagram to use on each slide and likely questions with answers |
+| [**Outline_explained**](RISC-V-Core/docs/Outline_explained.md) | A slide-by-slide plan for a talk, with the diagram to use on each slide and likely questions with answers |
 
 ## What is in this repository
 
@@ -123,6 +123,3 @@ Then update the expected values in `tb/tb_riscv_core.v`.
 * Instruction and data memory are 1 KB each.
 * A single-cycle design has a slow clock, mostly because of divide. See [Part 1](RISC-V-Core/docs/01-from-idea-to-chip.md) for what it takes to go from here to an FPGA or a chip.
 
-## License
-
-No license has been chosen yet. Before sharing the project widely, add a `LICENSE` file (for example MIT) so others know how they may use the code.
