@@ -1,4 +1,4 @@
-# Presentation outline
+# All Working outline
 
 A ready-made plan for a 10 to 15 minute talk about this core. Each slide names the diagram to use (all are in `docs/images/`, and you can paste an SVG straight into PowerPoint or Google Slides, or open it in a browser and take a screenshot).
 
