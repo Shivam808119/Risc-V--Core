@@ -1,6 +1,6 @@
 # Part 1: How a processor core is made, from idea to chip
 
-This guide follows the whole journey of building a CPU core, from the first idea to a real chip. It shows which stages this repository covers (stages 1 to 4) and what the remaining stages (5 to 8) involve.
+ from the first idea to a real chip. It shows which stages this repository covers (stages 1 to 4) and what the remaining stages (5 to 8) involve.
 
 ![Design flow](images/design-flow.svg)
 
