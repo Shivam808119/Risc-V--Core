@@ -4,15 +4,15 @@ A small, readable **RISC-V processor core** (RV32I + M extension) written in Ver
 
 It is built for learning and for explaining. The whole CPU is one short file, with a testbench, a test program, and diagrams you can use in a presentation.
 
-![Datapath](docs/images/datapath.svg)
+![Datapath](RISC-V-Core/docs/images/datapath.svg)
 
 ## Read the guides
 
 | Guide | What it covers |
 |---|---|
-| [**Part 1: From idea to chip**](docs/01-from-idea-to-chip.md) | The full journey of making a core: specification, architecture, Verilog, simulation, synthesis, FPGA / ASIC, and the final chip |
-| [**Part 2: The core explained**](docs/02-core-explained.md) | Every module, the instruction formats, the control signals, the branch logic and the test program, all with diagrams |
-| [**Presentation outline**](docs/03-presentation-outline.md) | A slide-by-slide plan for a talk, with the diagram to use on each slide and likely questions with answers |
+| [**Part 1: From idea to chip**](RISC-V-Core/docs/01-from-idea-to-chip.md) | The full journey of making a core: specification, architecture, Verilog, simulation, synthesis, FPGA / ASIC, and the final chip |
+| [**Part 2: The core explained**](RISC-V-Core/docs/02-core-explained.md) | Every module, the instruction formats, the control signals, the branch logic and the test program, all with diagrams |
+| [**Presentation outline**](RISC-V-Core/docs/03-presentation-outline.md) | A slide-by-slide plan for a talk, with the diagram to use on each slide and likely questions with answers |
 
 ## What is in this repository
 
@@ -121,7 +121,7 @@ Then update the expected values in `tb/tb_riscv_core.v`.
 * The design and testbench are written and the expected results are documented. Run the simulation above to confirm `ALL TESTS PASSED` on your machine.
 * Only word loads and stores (`lw`, `sw`) are implemented. There are no interrupts, CSRs or system instructions.
 * Instruction and data memory are 1 KB each.
-* A single-cycle design has a slow clock, mostly because of divide. See [Part 1](docs/01-from-idea-to-chip.md) for what it takes to go from here to an FPGA or a chip.
+* A single-cycle design has a slow clock, mostly because of divide. See [Part 1](RISC-V-Core/docs/01-from-idea-to-chip.md) for what it takes to go from here to an FPGA or a chip.
 
 ## License
 
